@@ -1,0 +1,17 @@
+Summary/Novelty: The paper proposes a simplified version of GCN that maintains the high quality of the embeddings while reduces the time significantly. 
+To do so, the paper removes the nonlinearities at each hidden layer and collaspes the weight matrices between the layers into a single linear function. 
+The final model is scalable to larger datasets and interpretable: the feature extraction from the linear layer corresponds to a single fixed filter 
+applied to each feature dimension.
+
+Downstream tasks: 
+- Node classification: transductively with Cora, Citeseer, Pubmed and inductively with Reddit. 
+  Notable baselines: FastGCN, DeepWalk, GAT, GCN, GIN (transductive setting) and GaAN, GraphSAGE, FastGCN (inductive setting)
+- Text classification: assign labels to documents by creating a corpus-level graph which treats documents and words as nodes in a graph
+- Semi-supervised user geolocation: locate "home" position of users on social media posts, connection among users with GEOTEXT, TWITTER_US, TWITTER-WORLD
+- Relation extraction: predict the relation between subject and object in a sentence
+- Zero-shot image classification: learning an image classifier by using GCN to map the category names to image feature domain
+- Graph classification: use graph structure to categorize graphs. 
+
+
+
+

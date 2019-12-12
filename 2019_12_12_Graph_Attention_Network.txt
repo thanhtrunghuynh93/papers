@@ -1,0 +1,8 @@
+Summary: The paper proposes graph attention networks, a new model that uses masked self-attentional layers to enhance the GNN. 
+The intuition is to compute the hidden representations of each node in the graph by attending over its neighbors following a self-attention strategy. 
+In its most general formulation, the model allows every node to attend on every other node, dropping all structural information. The graph structure then is injected
+into the mechanism by performing masked attention. The technique is also able to inductive and transductive setting. 
+
+Task: node classification. Datasets: Cora, Citeseer, Pubmed (transductive) and PPI (inductive)
+
+ 
