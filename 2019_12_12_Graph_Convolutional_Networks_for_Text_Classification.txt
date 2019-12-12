@@ -1,0 +1,17 @@
+Summary/novelty: Applying graph convolutional networks for text classification. To do so, first the paper constructs a heterogeneous graph with words and documents with the edges based on words co-occurrence and word-document relations, then learn the embedding using GCN for the document classification task. The experimental result shows that this technique helps to save the amount of supervision data without the need of external word embeddings.
+
+Literatures: mostly based on feature engineering. n-grams, ontologies, etc... For the deep learning based techniques, there are two categories: using and not using word embeddings. 
+
+Graph construction: with |D| + |W| nodes, with |D| is the number of documents in the corpus and |W| is the number of words. The edge weight between document-word is the TF-IDF, while the edge weight between word-word is PMI on fixed size sliding window. Then the GCN is applied on the constructed network with supervised cross-entropy loss over all labeled
+documents. 
+
+Experiments: 
+- Downstream tasks: document classification
+- Datasets: 20NG, R8, R52 and Ohsumed
+- Baselines: TF-IDF + clustering, CNN, LSTM, fastText
+
+
+
+ 
+
+
